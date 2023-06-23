@@ -14,14 +14,14 @@ var date = new Date().getDate(); //To get the Current Date
 var month = new Date().getMonth() + 1; //To get the Current Month
 var year = new Date().getFullYear(); //To get the Current Year
 
+//if 
+
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
     <KeyboardAvoidingView behavior="position" style={styles.container}>
-
     <Text style={styles.mainTitle}>Surfrider Beach Clean-Up {'\n'} {month}/{date}/{year}</Text>
-
-    <View style={styles.container}>
+   
     <ScrollView style={styles.scrollContainer}>
       {Object.entries(jsonData).map(([title, values]) => (
         <View key={title} style={styles.rowContainer}>
@@ -41,9 +41,8 @@ var year = new Date().getFullYear(); //To get the Current Year
 
         </View>
       ))}
-    </ScrollView>
-    </View>
     
+    </ScrollView>
     </KeyboardAvoidingView>
     </TouchableWithoutFeedback>
     
@@ -54,17 +53,19 @@ const styles = StyleSheet.create({
   mainTitle:{
     textAlign: 'center',
     paddingTop: 60,
-  },
-  scrollContainer:{
-    flex: 1,
+
   },
   container: {
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 50,
+    paddingTop: 30,
 
   },
+  scrollContainer:{
+    flex: 1,
+  },
+
   rowContainer: {
     marginBottom: 16,
     backgroundColor: 'skyblue',
