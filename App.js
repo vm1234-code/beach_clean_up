@@ -27,20 +27,30 @@ var year = new Date().getFullYear(); //To get the Current Year
         <View key={title} style={styles.rowContainer}>
           <Text style={styles.title}>{title}</Text>
           {values.map((value, index) => (
-            <View key={index}>
+            <View style={styles.inputLine} key={index}>
               <Text style={styles.inputTitle}>{value}</Text>
               <TextInput
-                style={styles.input}
+                style={styles.inputNumber}
                 placeholder="Enter value"
                 keyboardType="numeric"
                 onChangeText={(text) => handleInputChange(value, text)}
                 value={inputValues[value] || ''}
               />
+              
             </View>
           ))}
 
         </View>
+
+        
       ))}
+
+      <TextInput
+                style={styles.input}
+                placeholder="Enter value"
+                keyboardType="numeric"
+      />
+
     
     </ScrollView>
     </KeyboardAvoidingView>
@@ -71,17 +81,31 @@ const styles = StyleSheet.create({
     backgroundColor: 'skyblue',
     justifyContent:'center',
     alignItems: 'center',
-    width: 250,
+    width: 300,
   },
+  
   title: {
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 8,
     alignSelf: 'flex-start'
   },
-  input: {
+
+  inputTitle:{
+    paddingRight:15,
+  },
+  
+  //This puts the input box next to the title
+  inputLine: {
+    flexDirection: 'row',
+    alignItems: 'center',
+
+  },
+  inputNumber: {
+    height:40,
+    width:60,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: 'black',
     borderRadius: 4,
     padding: 8,
     marginBottom: 8,
