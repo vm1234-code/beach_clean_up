@@ -1,5 +1,23 @@
 {
-  'Title 1': ["hello", 'value 2', 'value 3'],
-  'Title 2': ['value 4', 'value 5', 'value 6'],
-  'Title 3': ['value 7', 'value 8', 'value 9'],
+  'Food + Beverage Packaging \n (Plastic + Foam)': 
+    ['Plastic 6-Pack Holders', 'Plastic Bags', 'Plastic Bottle Caps + Rings', 'Juice Boxes', 'Foam Plates', 'Plastic Plates', 'Plastic Stirrers', 'Plastic Take-Out Food Containers'],
+  'Smoking \n (Plastic)': 
+  ['Cigarette Lighters', 'Cigar Tips', 'Plastic Tobacco Packaging/Wrap', 'Vape Cartidges', 'Single-Use Weed Containers'],
+  'Personal Care \n (Plastic + Foam)': 
+  ['Diapers', 'Syringes', 'Tampons/Tampon Applicators', 'Toothbrushes', 'Toothpicks/Floss'],
+  'Fishing \n (Plastic + Foam)': 
+  ['Bait Bags/Containers', 'Buoys/Floats', 'Fishing Line \n (1 yard = 1 piece)', 'Hooks/Sinkers/Lures', 'Light Sticks', 'Nets', 'Pots and Traps', 'Rope \n (1 yard = 1 peice)'],
+  'Other \n (Plastic + Foam)': 
+  ['Non-Beverage Bottles', 'Foam Coolers', 'Shotgun Wads', 'Plastic Film/Wrapper \n (non-food or unknown)', 'Zip Ties', 'Dog Poop Bags', 'Other \n (write in)'],
+  'Paper + Wood': 
+  ['Paper Bags', 'Paper Cigarette Box', 'Paper/Wood Cups', 'Paper/Wood Fragments/Pieces', 'Paper Napkins', 'Paper/Wood Plates', 'Paper/Wood Straws', 
+  'Paper/Wood Take-Out Food Containers', 'Treated Wood \n (ie. pallets; Note driftwood)', 'Wood Coffee/Drink Stirrers', 'Other (write-in)'],
+  'Metal': 
+  ['Metal Bottle Caps', 'Aluminum Cans (beverage)', 'Cans (other metal)', 'Metal Fragments', 'Other (write-in)'],
+  'Glass':
+  ['Beverage Bottles', 'Fragments', 'Other (write-in)'],
+  'Rubber + Latex':
+  ['Condoms', 'Tires', 'Other (write-in)'],
+  'Other Materials': 
+  ['Fireworks', 'Tarps', 'Other (write-in)']
 }
